@@ -21,8 +21,8 @@ class CreateContentTypeCommand extends ContainerAwareCommand
     {
         $this->setName( 'azimutec:kikundi:create_content_type' )->setDefinition(
             array(
-                new InputArgument( 'identifier', InputArgument::REQUIRED, 'a content type identifier' ),
-                new InputArgument( 'group_identifier', InputArgument::REQUIRED, 'a content type group identifier' )
+                new InputArgument( 'group_identifier', InputArgument::REQUIRED, 'a content type group identifier' ),
+                new InputArgument( 'identifier', InputArgument::REQUIRED, 'a content type identifier' )
             )
         );
     }
@@ -45,27 +45,96 @@ class CreateContentTypeCommand extends ContainerAwareCommand
         }
         catch ( \eZ\Publish\API\Repository\Exceptions\NotFoundException $e )
         {
-            $output->writeln( "content type group with identifier $groupIdentifier not found" );
+            $output->writeln( "<error>Content type group with identifier '" . $groupIdentifier . "' not found</error>" );
             return;
         }
 
         // instantiate a ContentTypeCreateStruct with the given content type identifier and set parameters
         $contentTypeCreateStruct = $contentTypeService->newContentTypeCreateStruct( $contentTypeIdentifier );
+
+        // Main language
         $contentTypeCreateStruct->mainLanguageCode = 'eng-GB';
-        // We set the Content Type naming pattern to the title's value
-        $contentTypeCreateStruct->nameSchema = '<title>';
 
         // set names for the content type
         $contentTypeCreateStruct->names = array(
-            'eng-GB' => $contentTypeIdentifier . 'eng-GB',
+            'eng-GB' => $contentTypeIdentifier,
+            // 'eng-GB' => $contentTypeIdentifier . 'eng-GB',
+            // 'fre-FR' => $contentTypeIdentifier,
+            // 'fre-FR' => $contentTypeIdentifier . 'fre-FR',
             // 'ger-DE' => $contentTypeIdentifier . 'ger-DE',
         );
 
         // set description for the content type
         $contentTypeCreateStruct->descriptions = array(
             'eng-GB' => 'Description for ' . $contentTypeIdentifier . ' [eng-GB]',
+            // 'fre-FR' => 'Description pour ' . $contentTypeIdentifier . ' [fre-FR]',
             // 'ger-DE' => 'Description for ' . $contentTypeIdentifier . ' [ger-DE]',
         );
+
+
+        switch ($contentTypeIdentifier)
+        {
+            case "kik_article1":
+                $this->createKikArticle1($contentTypeIdentifier, );
+                break;
+            
+            case "kik_folder1":
+                $this->createKikFolder1();
+                break;
+            
+            case "kik_image1":
+                $this->createKikImage1();
+                break;
+            
+            case "kik_image1_folder":
+                $this->createKikImage1Folder();
+                break;
+            
+            case "kik_file1":
+                $this->createKikImage1();
+                break;
+            
+            case "kik_file1_folder":
+                $this->createKikImage1Folder();
+                break;
+            
+            default:
+                $output->writeln( "<error>Content type with identifier '" . $contentTypeIdentifier . "' is not allowed</error>" );
+                return;
+                break;
+            
+        }
+
+        try
+        {
+            $contentTypeDraft = $contentTypeService->createContentType( $contentTypeCreateStruct, array( $contentTypeGroup ) );
+            $contentTypeService->publishContentTypeDraft( $contentTypeDraft );
+            $output->writeln( "<info>Content type created '" . $contentTypeIdentifier . "' with ID '" . $contentTypeDraft->id . "'</info>" );
+        }
+        catch ( \eZ\Publish\API\Repository\Exceptions\UnauthorizedException $e )
+        {
+            $output->writeln( "<error>" . $e->getMessage() . "</error>" );
+        }
+        catch ( \eZ\Publish\API\Repository\Exceptions\ForbiddenException $e )
+        {
+            $output->writeln( "<error>" . $e->getMessage() . "</error>" );
+        }
+    }
+
+    /**
+     * Prints out the location name, and recursively calls itself on each its children
+     *
+     * @param \eZ\Publish\API\Repository\Values\Content\Location $location
+     * @param OutputInterface $output
+     *
+     * @return ContentTypeCreateStruct $contentTypeCreateStruct
+     */
+    private function createKikArticle1( string $contentTypeIdentifier, ContentTypeService $contentTypeService, ContentTypeCreateStruct $contentTypeCreateStruct, OutputInterface $output )
+    {
+        $output->writeln( " . creating content type with identifier '" . $contentTypeIdentifier . "':" );
+
+        // We set the Content Type naming pattern to the title's value
+        $contentTypeCreateStruct->nameSchema = '<title>';
 
         // add a TextLine Field with identifier 'title'
         $titleFieldCreateStruct = $contentTypeService->newFieldDefinitionCreateStruct( 'title', 'ezstring' );
@@ -77,6 +146,7 @@ class CreateContentTypeCommand extends ContainerAwareCommand
         $titleFieldCreateStruct->isRequired = true;
         $titleFieldCreateStruct->isSearchable = true;
         $contentTypeCreateStruct->addFieldDefinition( $titleFieldCreateStruct );
+        $output->writeln( "   . field 'title'" );
 
         // add a TextLine Field body field
         $bodyFieldCreateStruct = $contentTypeService->newFieldDefinitionCreateStruct( 'body', 'ezstring' );
@@ -88,20 +158,41 @@ class CreateContentTypeCommand extends ContainerAwareCommand
         $bodyFieldCreateStruct->isRequired = true;
         $bodyFieldCreateStruct->isSearchable = true;
         $contentTypeCreateStruct->addFieldDefinition( $bodyFieldCreateStruct );
+        $output->writeln( "   . field 'body'" );
 
-        try
-        {
-            $contentTypeDraft = $contentTypeService->createContentType( $contentTypeCreateStruct, array( $contentTypeGroup ) );
-            $contentTypeService->publishContentTypeDraft( $contentTypeDraft );
-            $output->writeln( "<info>Content type created '$contentTypeIdentifier' with ID $contentTypeDraft->id" );
-        }
-        catch ( \eZ\Publish\API\Repository\Exceptions\UnauthorizedException $e )
-        {
-            $output->writeln( "<error>" . $e->getMessage() . "</error>" );
-        }
-        catch ( \eZ\Publish\API\Repository\Exceptions\ForbiddenException $e )
-        {
-            $output->writeln( "<error>" . $e->getMessage() . "</error>" );
-        }
+        return $contentTypeCreateStruct;
+    }
+
+    /**
+     * Prints out the location name, and recursively calls itself on each its children
+     *
+     * @param \eZ\Publish\API\Repository\Values\Content\Location $location
+     *
+     * @param OutputInterface $output
+     */
+    private function createKikFolder1( )
+    {
+    }
+
+    /**
+     * Prints out the location name, and recursively calls itself on each its children
+     *
+     * @param \eZ\Publish\API\Repository\Values\Content\Location $location
+     *
+     * @param OutputInterface $output
+     */
+    private function createKikImage1( )
+    {
+    }
+
+    /**
+     * Prints out the location name, and recursively calls itself on each its children
+     *
+     * @param \eZ\Publish\API\Repository\Values\Content\Location $location
+     *
+     * @param OutputInterface $output
+     */
+    private function createKikImage1Folder( )
+    {
     }
 }
