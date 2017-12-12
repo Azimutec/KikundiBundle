@@ -75,7 +75,7 @@ class CreateContentTypeCommand extends ContainerAwareCommand
         switch ($contentTypeIdentifier)
         {
             case "kik_article1":
-                $this->createKikArticle1($contentTypeIdentifier, );
+                //$this->createKikArticle1($contentTypeIdentifier, );
                 break;
             
             case "kik_folder1":
