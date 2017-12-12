@@ -1,0 +1,16 @@
+{% extends "AzimutecKikundiBundle::pagelayout.html.twig" %}
+{% block content %}
+    <!-- full\kik_folder1.html.twig -->
+    <h3 class="center bottom-plus new-header">KIK_FOLDER1</h3>
+    <h3 class="center bottom-plus new-header">Name: {{ ez_content_name(content) }}</h3>
+    <h3 class="center bottom-plus new-header">1/ title: {{ ez_render_field(content, 'title') }}</h3>
+    <h3 class="center bottom-plus new-header">2/ short_title: {{ ez_render_field(content, 'short_title') }}</h3>
+    <h3 class="center bottom-plus new-header">3/ image: {{ ez_render_field(content, 'image') }}</h3>
+    <div class="col-xs-10 text-justified">4/ short_description: {{ ez_render_field(content, 'short_description') }}</div>
+    <div class="col-xs-10 text-justified">5/ description: {{ ez_render_field(content, 'description') }}</div>
+    <div class="col-xs-10 text-justified">6/ show_subitems: {{ ez_render_field(content, 'show_subitems') }}</div>
+    <h1>Children:</h1>
+    {% for item in items %}
+        <h2>{{ ez_content_name(item) }}</h2>
+    {% endfor %}
+{% endblock %}

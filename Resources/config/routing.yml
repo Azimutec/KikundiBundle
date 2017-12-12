@@ -1,0 +1,5 @@
+# Azimutec/KikundiBundle/Resources/config/routing.yml
+
+#azimutec_kikundi_homepage:
+#    path:     /
+#    defaults: { _controller: AzimutecKikundiBundle:Default:index }

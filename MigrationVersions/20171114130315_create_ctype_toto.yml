@@ -1,0 +1,46 @@
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: toto
+    name:
+        eng-GB: totoeng-GB
+    description:
+        eng-GB: 'Description for toto [eng-GB]'
+    name_pattern: '<title>'
+    url_name_pattern: ''
+    is_container: false
+    lang: eng-GB
+    attributes:
+        -
+            identifier: title
+            type: ezstring
+            name:
+                eng-GB: Title
+            description:
+                eng-GB: 'The Title'
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 10
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: body
+            type: ezstring
+            name:
+                eng-GB: Body
+            description:
+                eng-GB: 'Description for Body'
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 20
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }

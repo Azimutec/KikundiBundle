@@ -1,0 +1,5 @@
+-
+    type: content_type
+    mode: delete
+    match:
+        contenttype_identifier: toto

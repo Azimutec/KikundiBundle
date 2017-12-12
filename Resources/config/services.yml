@@ -1,0 +1,15 @@
+# Azimutec/KikundiBundle/Resources/config/services.yml
+
+services:
+#    azimutec_kikundi.example:
+#        class: Azimutec\KikundiBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    app.criteria.children:
+        class: Azimutec\KikundiBundle\Criteria\Children
+
+    app.controller.folder:
+        class: Azimutec\KikundiBundle\Controller\FolderController
+        arguments:
+            - '@ezpublish.api.service.search'
+            - '@ezpublish.config.resolver'
+            - '@app.criteria.children'

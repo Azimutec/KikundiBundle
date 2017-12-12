@@ -1,0 +1,30 @@
+# Azimutec/KikundiBundle/Resources/config/ezplatform.yml
+
+# on enleve cette ligne car "prepend"
+#ezpublish:
+system:
+    site:
+        content_view:
+            full:
+                root_folder:
+                    template: "AzimutecKikundiBundle:full:root_folder.html.twig"
+                    match:
+                        Id\Location: 2
+                kik_article1:
+                        template: "AzimutecKikundiBundle:full:kik_article1.html.twig"
+                        match:
+                            Identifier\ContentType: [kik_article1]
+                kik_folder1:
+                        controller: app.controller.folder:showAction
+                        template: "AzimutecKikundiBundle:full:kik_folder1.html.twig"
+                        match:
+                            Identifier\ContentType: [kik_folder1]
+            line:
+                kik_article1:
+                        template: "AzimutecKikundiBundle:line:kik_article1.html.twig"
+                        match:
+                            Identifier\ContentType: [kik_article1]
+                kik_folder1:
+                        template: "AzimutecKikundiBundle:line:kik_folder1.html.twig"
+                        match:
+                            Identifier\ContentType: [kik_folder1]
