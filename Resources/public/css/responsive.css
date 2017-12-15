@@ -1,0 +1,397 @@
+@media screen and (max-width:1200px)
+{
+    #footer .blogroll li,
+    #header_content
+    {
+        height:auto
+    }
+    #logo,
+    .menu_principal .scroll
+    {
+        left:0
+    }
+    #logo,
+    #menu,
+    .is-sticky #header
+    {
+        text-align:center
+    }
+    #logo,
+    #menu
+    {
+        width:100%;
+        z-index:999
+    }
+    #logo
+    {
+        background:rgba(0,0,0,0);
+        margin:0;
+        position:relative;
+        top:0;
+        width:100%
+    }
+    #menu
+    {
+        margin:0;
+        display:block
+    }
+    #footer .widget
+    {
+        width:50%
+    }
+    .is-sticky #menu_smartphone
+    {
+        text-align:left
+    }
+    .is-sticky #logo
+    {
+        background:#FFF
+    }
+    .is-sticky #menu
+    {
+        display:none
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:640px)
+{
+    .adresse
+    {
+        width:25%
+    }
+    .fiche
+    {
+        width:40%
+    }
+    h2
+    {
+        font-size:1.4em
+    }
+    #groupe-scolaire #colonne_gauche ul li,
+    #lequipe-municipale .col-1 li
+    {
+        height:auto
+    }
+}
+
+@media screen and (max-width:1024px)
+{
+    #header_content,
+    .menu_principal li
+    {
+        height:auto;
+        line-height:normal;
+    }
+    #menu
+    {
+        display:none;
+    }
+    #logo
+    {
+        margin:20px 0;
+    }
+    #logo img
+    {
+        width:auto;
+        max-width:90%;
+        height:auto;
+        margin:0 auto;
+    }
+    #navbar
+    {
+        text-align:center;
+        height:auto;
+    }
+    #open
+    {
+        display:inline-block;
+        vertical-align:middle;
+        background:#f1b51c;
+    }
+    #navbar a
+    {
+        padding:0 5px;
+        border-right:0
+    }
+    #menu_smartphone a,
+    #navbar #open a:hover
+    {
+        color:#FFFFFF;
+    }
+    #menu_smartphone
+    {
+        background:#335d97;
+        position:fixed;
+        top:37px;
+        width:100%;
+        z-index:999;
+        overflow-y:scroll;
+        height:100%;
+        padding:0 0 30px
+    }
+    #menu_smartphone a:hover
+    {
+        font-weight:700
+    }
+    #menu_smartphone li
+    {
+        display:block;
+        padding:15px 5%
+    }
+    .menu_principal .scroll
+    {
+        left:0
+    }
+    .menu_principal li .sub-menu
+    {
+        position:relative;
+        top:0;
+        display:block
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:640px)
+{
+    #menu_smartphone li
+    {
+        display:inline-block;
+        width:40%;
+        vertical-align:top;
+    }
+    #menu_smartphone li ul li
+    {
+        width:100%;
+        display:block;
+    }
+}
+
+@media screen and (max-width:928px)
+{
+    .gallery-item
+    {
+        width:30%
+    }
+    .category .contenu li
+    {
+        width:43%
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    #tabs .r-tabs-panel
+    {
+        margin:0 auto;
+        padding:15px 0!important;
+        width:100%;
+        float:none
+    }
+    .r-tabs .r-tabs-accordion-title
+    {
+        background:#fff;
+        display:block;
+        margin:10px auto;
+        padding:20px 5%;
+        width:80%
+    }
+    #tabs .r-tabs-accordion-title
+    {
+        width:90%;
+        border:1px solid #ADADAD
+    }
+    #tabs .r-tabs-accordion-title a
+    {
+        color:#ADADAD;
+        text-transform:uppercase;
+        display:block;
+        width:100%
+    }
+    #tabs .r-tabs-accordion-title a:hover
+    {
+        color:#91CC4B
+    }
+    #tabs .r-tabs-accordion-title.r-tabs-state-active
+    {
+        background:#91CC4B;
+        position:relative;
+        border:1px solid #91CC4B
+    }
+    #tabs .r-tabs-accordion-title.r-tabs-state-active a
+    {
+        color:#FFF
+    }
+    #actu_home .r-tabs-panel
+    {
+        margin:20px auto 0;
+        float:none;width:80%
+    }
+    #actu_home .r-tabs-state-active
+    {
+        background:#104385;
+        color:#FFF
+    }
+    #text-7 .textwidget .text_lien
+    {
+        font-size:1em
+    }
+}
+
+@media screen and (max-width:640px)
+{
+    #changeFont,
+    #nav_menu-2 .menu-commune-de-groissiat-container,
+    #nav_menu-3 .menu-pratiques-container,
+    #search-2,
+    .contenu_diapo,
+    .is-sticky #header
+    {
+        display:none
+    }
+    h1
+    {
+        font-size:1.8em
+    }
+    h2
+    {
+        font-size:1.5em
+    }
+    .alignright
+    {
+        float:none
+    }
+    #footer .widget
+    {
+        float:none;
+        width:100%;
+        text-align:center;
+        margin:20px 0
+    }
+    #menu-menu-footer li
+    {
+        padding:0;
+        width:100%
+    }
+    #footer .blogroll li
+    {
+        width:30%;
+        height:auto
+    }
+    #footer .textwidget
+    {
+        margin:0
+    }
+    #colonne_droite,
+    #colonne_gauche
+    {
+        width:100%;
+        margin:0
+    }
+    #acces_un_clic li,
+    #text-7 .textwidget .logo_lien,
+    #text-7 .textwidget .text_lien
+    {
+        width:100%;
+        margin:0;
+        text-align:center
+    }
+    #bienvenue li
+    {
+        width:49%
+    }
+    .col-3
+    {
+        margin:10px 0;
+        padding:0 5% 20px;
+        width:90%
+    }
+    #bienvenue-a-groissiat .r-tabs-panel li,
+    #formalites-administratives #naissance,
+    .col-2,
+    .multicol .col-1,
+    .multicol .col-2
+    {
+        margin:0;
+        width:100%;
+        padding:0
+    }
+    #groupe-scolaire #colonne_gauche ul li,
+    #lequipe-municipale .col-1 li,
+    .adresse,
+    .adresse_dechetterie,
+    .ete,
+    .hiver,
+    .papier li
+    {
+        width:96%;
+        margin:10px 0
+    }
+    #carte_identite ul li,
+    #passeport ul li
+    {
+        margin-left:30px
+    }
+    #carte_identite ul ul li,
+    #passeport ul ul li
+    {
+        margin-left:20px
+    }
+    .fiche
+    {
+        padding:10px 5%;
+        width:90%;
+        margin:10px 0
+    }
+    #filters li,
+    #numeros-urgences .col-1 li
+    {
+        width:100%;
+        margin:10px 0
+    }
+    .page-template-loisirs #colonne_gauche img.alignright
+    {
+        height:auto;
+        margin:20px auto;
+        width:100%!important
+    }
+    .champs,
+    .champs .wpcf7-form-control-wrap,
+    .champs_textarea .wpcf7-form-control-wrap,
+    .gallery-item
+    {
+        width:100%
+    }
+    #bienvenue-a-groissiat .r-tabs-panel li
+    {
+        margin:10px 0
+    }
+    .champs
+    {
+        float:left
+    }
+    .champs label,.champs_textarea label
+    {
+        width:100%;
+        text-align:left
+    }
+    .gallery-item
+    {
+        margin:15px 0
+    }
+    .category .contenu li
+    {
+        margin:0 0 30px;
+        width:100%
+    }
+    #actu_home .r-tabs-state-active a
+    {
+        color:#FFF
+    }
+}
+
+@media screen and (max-width:640px) and (orientation:landscape)
+{
+    #header
+    {
+        position:relative!important
+    }
+}

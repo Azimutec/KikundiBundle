@@ -1,0 +1,1342 @@
+html,
+body
+{
+    height:100%
+}
+
+html
+{
+    margin:0!important;
+    font-size:1em
+}
+
+body
+{
+    font-size:1.2em;
+    color:#494a4a;
+    font-family:Raleway,sans-serif;
+    font-weight:400;
+    width:100%;
+    background:#FFF
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    color:#104385;
+}
+
+h1
+{
+    font-size:2.4em;
+    margin:20px 0 40px;
+    border-bottom:1px dashed #104385;
+    padding:0 0 5px;
+}
+
+h2
+{
+    font-size:2em;
+    padding:20px 0;
+}
+
+h3
+{
+    font-size:1.5em;
+    margin:0 0 10px;
+}
+
+h4
+{
+    font-size:1.3em;
+}
+
+h5
+{
+    font-size:1em;
+    font-weight:700;
+}
+
+h1,
+h2,
+h3,
+h5,
+.menu_principal li
+{
+    text-transform:uppercase
+}
+
+h1,
+h2
+{
+    font-weight:300
+}
+
+h3,
+h4
+{
+    font-weight:400
+}
+
+h4,
+h5
+{
+    margin:0 0 15px
+}
+
+abbr
+{
+    text-decoration: none;
+    font-variant: none
+}
+
+a
+{
+    color:#104385;
+    text-decoration:none
+}
+
+a:hover,
+#navbar a:hover
+{
+    color:#104385
+}
+
+#changeFont,
+#logo
+{
+    text-align:center
+}
+
+*
+{
+    padding:0;margin:0
+}
+
+.clear
+{
+    clear:both
+}
+
+img
+{
+    border:0;
+    width:auto;
+    max-width:100%;
+    height:auto
+}
+
+.alignleft
+{
+    float:left;
+    margin:0 20px 0 0
+}
+
+.alignright
+{
+    float:right;
+    margin:0 0 0 20px
+}
+
+.aligncenter
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.width-50
+{
+    display:inline-block!important;
+    margin:0 10px!important;
+    max-width:47%!important
+}
+
+#logo,
+#text-4,
+#wunderground_forecast_widget-2,
+.middle
+{
+    display:inline-block;
+    vertical-align:middle
+}
+
+#text-4 .textwidget a:hover
+{
+    color:#f1b51c
+}
+
+.transitions
+{
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    transition:all .5s linear
+}
+
+.middle
+{
+    line-height:1.2
+}
+
+#wrapper-sticky-wrapper
+{
+    z-index:999;
+    margin:0;position:relative
+}
+
+#header,
+#navbar
+{
+    width:100%;
+    position:relative
+}
+
+#content_navbar,
+#header_content,
+.content
+{
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+    position:relative
+}
+
+#header_content
+{
+/*    padding:10px 0;
+    height:215px;
+    line-height:215px;
+    */
+    padding:0;
+    height:200px;
+    line-height:200px;
+    max-width:100%;
+    width:100%
+}
+
+#navbar
+{
+    background:#7b7b7b;
+    height:37px
+}
+
+#navbar a
+{
+    color:#FFFFFF;
+    font-size:30px;
+    margin:0 5px;
+    border-right:1px solid #FFFFFF;
+    padding:0 10px 0 0
+}
+
+#search-2
+{
+    float:right;
+    width:260px
+}
+
+#search-2 input
+{
+    background:#b1b1b1;
+    color:#000000;
+    float:left;
+    border:0;
+    width:200px;
+    height:25px
+}
+
+#search-2 #searchsubmit
+{
+    color:#FFFFFF;
+    float:right;
+    width:36px;
+    height:30px;
+    padding:0;
+    background:url(../images/icon_search.jpg) center 3px no-repeat #000;
+    text-indent:-999px;
+    overflow:hidden
+}
+
+#logo
+{
+    line-height:1.2;
+    width:378px;
+    left:15%;
+    background:url(../images/bg_logo.png) top center no-repeat;
+    position:absolute;
+/*    top:24px */
+}
+
+#accueil #logo
+{
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+    transition:all .5s linear
+}
+
+#wunderground_forecast_widget-2
+{
+    width:100px;
+    height:37px
+}
+
+#wunderground_forecast_widget-2 .widgettitle
+{
+    display:none;
+}
+
+.wu-day-title
+{
+    font-size:1em!important;
+    font-family:Raleway,sans-serif!important;
+    color:#FFF!important;
+    font-weight:500!important;
+    float:right!important;
+    margin:5px 0 0!important
+}
+
+.wu-current-conditions .wu-day-title small
+{
+    font-size:.5em!important;
+    margin-left:-5px!important
+}
+
+.wu-icon
+{
+    width:50%;
+    float:right;
+    padding:0 !important;
+}
+
+.wu-icon img
+{
+    width:auto;
+    max-width:100%;
+    height:auto;
+    max-height:37px
+}
+
+#menu_smartphone,
+#open,
+.wu-copyright
+{
+    display:none
+}
+
+#changeFont
+{
+    position:fixed;
+    right:0;
+    top:300px
+}
+
+#changeFont a
+{
+    color:#FFF;
+    font-size:1.5em;
+    font-weight:700;
+    display:block;
+    padding:5px;
+    border-top:2px solid #FFF;
+    background:#f1b51c
+}
+
+#changeFont a:hover
+{
+    background:#104385;
+}
+
+#menu
+{
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    text-align:right;
+    background: #104385;
+    height:75px;
+    z-index:10;
+}
+
+.menu_principal .scroll
+{
+    line-height:1.2;
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+    position:relative;
+    left:8%;
+}
+
+.menu_principal li
+{
+    list-style:none;
+    display:inline-block;
+    padding:0 2%;
+    color:#FFF;
+/*    font-size:22px; */
+    font-size:17px;
+    font-weight:700;
+    height:100px;
+    line-height:75px;
+    position:relative;
+}
+
+.menu_principal li:first-child
+{
+    padding-left:0;
+}
+
+.menu_principal li:last-child
+{
+    padding-right:0;
+}
+
+.menu_principal li a
+{
+    font-size:22px;
+    font-weight:300;
+    color:#104385;
+}
+
+.menu_principal .current-menu-ancestor span,
+.menu_principal .current-menu-parent span,
+.menu_principal .current_page_item span
+{
+    color:#f1b51c
+}
+
+.sub-menu
+{
+    display:none
+}
+
+.menu_principal li .sub-menu
+{
+    background:#335d97;
+    left:-20px;
+    margin:0 auto;
+    padding:10px 2% 20px;
+    position:absolute;
+    right:0;
+    text-align:center;
+    top:75px;
+    width:160%;
+    z-index:9999
+}
+
+.menu_principal li:hover .sub-menu
+{
+    display:block;
+    visibility:visible
+}
+
+.menu_principal li .sub-menu li
+{
+    border-bottom:1px dashed;
+    display:block;
+    height:auto;
+    line-height:1.2;
+    margin:0 auto;
+    padding:15px 5%;
+    text-align:left;
+    text-transform:none;
+    width:80%;
+}
+
+.menu_principal li:hover .sub-menu li:last-child
+{
+    border-bottom:0;
+}
+
+.menu_principal li .sub-menu li a,
+.menu_principal li.current-page-ancestor .sub-menu li a,
+.menu_principal li.current_page_item .sub-menu li a
+{
+    font-size:18px;
+    color:#FFFFFF;
+}
+
+.menu_principal li .sub-menu li a:hover,
+.menu_principal li.current-menu-parent .sub-menu li.current-menu-item a,
+.menu_principal li.current-page-ancestor .sub-menu li a:hover,
+.menu_principal li.current-page-ancestor .sub-menu li.current_page_item a,
+.menu_principal li.current_page_item .sub-menu li a:hover,
+.menu_principal li.current_page_item .sub-menu li.current_page_item a
+{
+    color:#f1b51c
+}
+
+.menu_principal li .sub-menu li .sub-menu
+{
+    display:block;
+    position:relative;
+    padding:0;
+    top:0;
+    background:0 0
+}
+
+.menu_principal li .sub-menu li .sub-menu ul
+{
+    width:auto
+}
+
+.menu_principal li .sub-menu li .sub-menu li
+{
+    width:auto;
+    float:none;
+    display:block;
+    margin:0 0 0 40px;
+    padding:2px 0
+}
+
+#bienvenue li,
+#bienvenue li a,
+#colonne_droite,
+#colonne_gauche,
+#footer .copyright li
+{
+    display:inline-block
+}
+
+.menu_principal li .sub-menu li .sub-menu li a
+{
+    text-transform:inherit;
+    font-size:.6em;
+    padding:3px 0;
+    font-weight:300;
+    margin:0
+}
+
+.menu_principal li .sub-menu li .sub-menu li a::before
+{
+    content:" ";
+    border:0
+}
+
+#menu-item-37 .sub-menu
+{
+    width:130%
+}
+
+#contact_footer,
+#footer
+{
+    width:100%;
+    padding:20px 0;
+    text-align:justify;
+    font-size:.8em;
+    background:#7b7b7b;
+    color:#FFFFFF;
+    font-weight:300;
+    line-height:25px
+}
+
+#footer .widget
+{
+    float:left;
+    width:25%;
+    margin:0 0 20px
+}
+
+.content_contact,
+.content_footer
+{
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+}
+
+.widgettitle
+{
+    font-size:1.1em;
+    font-weight:700;
+    text-transform:uppercase;
+    margin:0 0 20px;
+}
+
+.content_footer li
+{
+    list-style:none;
+}
+
+.content_footer a
+{
+    color:#FFFFFF;
+}
+
+.content_footer a:hover
+{
+    color:#104385;
+}
+
+#text-3 iframe
+{
+    border:10px solid #FFFFFF;
+}
+
+#footer .copyright
+{
+    clear:both;
+    border-top:1px solid #b1b1b1;
+    padding:10px 0 0
+}
+
+#footer .copyright li
+{
+    list-style:none;
+    font-size:.8em;
+    float:right;
+}
+
+#footer .copyright li a
+{
+    border-right:1px solid #FFFFFF;
+    padding:0 10px;
+    display:inline-block;
+    height:15px;
+    line-height:15px;
+    color:#b1b1b1
+}
+
+#footer .copyright li a:hover
+{
+    color:#104385;
+}
+
+#footer .copyright li:first-child a
+{
+    border-right:0;
+}
+
+#menu-item-152
+{
+    float:left!important;
+}
+
+#menu-item-152 a
+{
+    border-right:0!important;
+    background:url(../images/logo_cchc_footer.jpg) top center no-repeat;
+    width:49px;
+    height:40px!important;
+    text-indent:-999px;
+    overflow:hidden;
+}
+
+.is-sticky
+{
+    width:100%
+}
+
+.is-sticky #header
+{
+    background:#104385;
+}
+
+.is-sticky #header_content
+{
+    height:75px;
+    line-height:75px;
+    padding:0
+}
+
+.is-sticky #logo
+{
+    margin:0;
+    width:138px;
+    top:0;
+}
+
+.is-sticky #logo img
+{
+    max-width:100%;
+    width:auto;
+    height:auto;
+}
+
+#diapo
+{
+    width:100%;
+    position:relative;
+    height:430px;
+    overflow:hidden;
+}
+
+#colonne_gauche
+{
+    width:59%;
+    vertical-align:top;
+}
+
+#colonne_droite
+{
+    width:38%;
+    margin:0 0 0 2%;
+    vertical-align:top;
+}
+
+#colonne_droite img,
+#colonne_gauche img
+{
+    width:auto;
+    max-width:90%;
+    height:auto;
+    margin:0 auto;
+    display:block;
+}
+
+#colonne_droite .widget,
+#lequipe-municipale .col-2 .widget,
+.cadre
+{
+    color:#FFFFFF;
+    text-align:center;
+    margin:20px 0;
+    padding:20px 0;
+}
+
+#colonne_droite .widgettitle,
+#flash-infos h2,
+#lequipe-municipale .col-2 h2,
+.cadre h2,
+.page-template-ecole #colonne_droite h2,
+.page-template-loisirs h2
+{
+    text-align:left;
+    font-weight:500;
+    color:#FFF;
+    font-size:1.5em;
+    margin:0 0 10px 20px;
+    padding:0;
+    text-transform:uppercase;
+}
+
+#bienvenue
+{
+    background:#335d97;
+}
+
+#bienvenue li
+{
+    list-style:none;
+    width:30%;
+    font-weight:600
+}
+
+#bienvenue li a
+{
+    color:#FFFFFF;
+    background:#335d97;
+    vertical-align:top;
+    padding:10px;
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-in;
+    -ms-transition:all 1s ease-in;
+    -o-transition:all 1s ease-in;
+    transition:all 1s ease-in
+}
+
+#bienvenue li a:hover
+{
+    background:#f1b51c;
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    transition:all 1s ease-out
+}
+
+#bienvenue li a img
+{
+    margin-bottom:10px!important
+}
+
+#actu_home
+{
+    background:#b1b1b1;
+    text-align:left
+}
+
+#actu_home h2
+{
+    color:#104385
+}
+
+#actu_home .r-tabs-nav
+{
+    float:left;
+    width:35%;
+    margin:20px 0 0 20px
+}
+#actu_home .r-tabs-nav li
+{
+    list-style:none
+}
+
+#actu_home .r-tabs-nav li a
+{
+    background:#FFF;
+    color:#104385;
+    display:block;
+    padding:10px;
+    font-size:.9em;
+    margin:0 0 5px
+}
+
+#acces_un_clic li a,
+#actu_home .r-tabs-nav .r-tabs-state-active a,
+#actu_home .r-tabs-nav li a:hover
+{
+    background:#104385;
+    color:#FFFFFF;
+}
+
+#actu_home .r-tabs-panel
+{
+    float:left;
+    width:45%;
+    background:#104385;
+    padding:5%;
+    margin:20px 20px 0 0
+}
+
+#actu_home .r-tabs-panel h3
+{
+    font-weight:600;
+    color:#FFF;
+    font-size:1.1em
+}
+
+#actu_home .r-tabs-panel img
+{
+    margin-top:20px!important;
+    max-width:100%
+}
+
+#acces_rapide
+{
+    background:#335d97
+}
+
+#acces_un_clic li
+{
+    list-style:none;
+    float:left;
+    width:50%;
+}
+
+#acces_un_clic li a
+{
+    padding:0 5%;
+    width:80%;
+    margin:10px auto;
+    display:block;
+    text-align:left;
+    line-height:90px;
+    height:90px;
+    font-weight:600;
+}
+
+#acces_un_clic li a:hover
+{
+    background:#f1b51c;
+}
+
+#acces_un_clic li a .middle
+{
+    width:100%
+}
+
+#acces_un_clic li a .img-lien
+{
+    vertical-align:middle;
+    display:inline-block;
+    width:25%;
+    margin:0 5% 0 0;
+}
+
+#acces_un_clic li a .text_lien
+{
+    vertical-align:middle;
+    display:inline-block;
+    width:70%;
+}
+
+#my_calendar_mini_widget-2,
+#my_calendar_mini_widget-3
+{
+    background:#f1b51c;
+}
+
+.my-calendar-nav
+{
+    text-align:right
+}
+
+.my-calendar-nav li{list-style:none;display:inline-block}
+.my-calendar-nav a{color:transparent;display:block;height:20px;overflow:hidden;width:20px;margin:0 5px}
+#mc_mini_widget-2 .calendar-events,#mc_mini_widget-3 .calendar-events,#text-7 .widgettitle,.screen-reader-text{display:none}
+.my-calendar-nav .my-calendar-prev a:before{content:"<";color:#FFF}
+.my-calendar-nav .my-calendar-next{margin:0 5% 0 0}
+.my-calendar-nav .my-calendar-next a:before{content:">";color:#FFF}
+#my_calendar_mini_widget-2 .my-calendar-month,#my_calendar_mini_widget-3 .my-calendar-month{color:#FFF;height:33px;margin-top:-23px}
+.my-calendar-table{width:90%;margin:0 auto;color:#000;border-collapse:collapse}
+.mc-main th{font-weight:400;border-bottom:1px solid #000;width:14%}
+.mc-main tr{height:28px}
+.mc-main td{width:14%;text-align:center}
+.has-events{background:#FFF}
+.has-events a{color:#000}
+.current-day{font-weight:700}
+
+#text-5
+{
+    background:#104385;
+}
+
+#colonne_droite #text-5 .widgettitle
+{
+/*    font-size:2em */
+}
+
+#colonne_droite #text-6
+{
+    background:#b1b1b1;
+    color:#104385;
+    text-align:left
+}
+
+#colonne_droite #text-6 .widgettitle
+{
+    font-size:2em;
+    color:#104385
+}
+
+#colonne_droite #text-6 .textwidget
+{
+    margin:0 0 0 20px
+}
+#colonne_droite #text-6 .textwidget p
+{
+    margin:15px 0
+}
+
+#colonne_droite #text-6 .textwidget a
+{
+    color:#104385
+}
+
+#colonne_droite #text-6 .textwidget a:hover{text-decoration:underline}
+#text-7 .textwidget span{vertical-align:middle;display:inline-block;text-align:left}
+
+#text-7 .textwidget .text_lien
+{
+    text-transform:uppercase;
+    font-size:1.5em;
+    font-weight:700;
+    width:65%;
+    color:#104385
+}
+
+#text-7 .textwidget a:hover .text_lien
+{
+    color:#335d97
+}
+
+#text-7 .textwidget .logo_lien{width:30%;margin:0 5% 0 0}
+#my-calendar{margin:0 0 40px}
+#my-calendar th{font-weight:500;border-bottom:0}
+#my-calendar td
+{
+    border:1px solid #b1b1b1;
+    height:108px;
+    padding:10px 2%;
+    text-align:center;
+    vertical-align:top;
+    width:10%
+}
+
+#my-calendar td .mc-date span:after,
+#my-calendar td .mc-date span:before
+{
+    content:" - "
+}
+
+#my-calendar .my-calendar-table
+{
+    width:100%;
+    border-collapse:separate
+}
+
+#my-calendar .has-events a
+{
+    background:#335d97;
+    color:#FFFFFF;
+    font-size:.5em;
+    text-transform:none;
+    display:inline-block;
+    padding:2px 5px;
+    margin:2px 0
+}
+
+#my-calendar .has-events a img
+{
+    display:none
+}
+
+#my-calendar .my-calendar-month
+{
+    font-size:2.5em;
+    text-transform:uppercase;
+    margin:0 0 30px
+}
+.my-calendar-date-switcher{margin:0 0 30px}
+.my-calendar-date-switcher label{width:7%}
+.my-calendar-date-switcher select{width:30%}
+
+.my-calendar-date-switcher .button
+{
+    width:15%;
+    border:0;color:#FFF;
+    background:#104385
+}
+
+#lequipe-municipale .col-1 h2{clear:both;text-align:center}
+#groupe-scolaire #colonne_gauche ul,#lequipe-municipale .col-1 ul{text-align:center}
+
+#groupe-scolaire #colonne_gauche ul li,#lequipe-municipale .col-1 li{list-style:none;display:inline-block;width:27%;margin:10px .5%;background:#eee;padding:10px 2%;height:95px;text-align:center;font-size:.8em;vertical-align:top}
+#groupe-scolaire #colonne_gauche li strong,#lequipe-municipale .col-1 li strong{display:block;font-size:1.2em}
+#groupe-scolaire #colonne_gauche li:before{content:"";margin:0}
+.col-2{padding:20px 2%;float:left;width:46%}
+.multicol .col-1{width:59%;float:left}
+.multicol .col-2{width:38%;margin:0 0 0 2%;padding:0}
+
+.col-3
+{
+    width:27%;
+    float:left;
+    margin:10px 1%;
+    background:#EDEDED;
+    padding:0 2% 20px
+}
+
+.papier li{width:41%;float:left;list-style:none;text-align:center;margin:20px 1%;background:#eee;padding:20px 2%;height:100px}
+.papier li img{display:block;margin:0 auto 20px}
+#formalites-administratives #naissance{border-right:1px solid #cdcccc;margin:0 2% 30px 0;width:43%}
+#formalites-administratives .col-2 li{list-style:none;margin:10px 0}
+#formalites-administratives .col-2 li:before{content:">";margin:0 10px 0 0;color:#335d97}
+#formalites-administratives .col-2 li a{color:#a9a9a9}
+#formalites-administratives .col-2 li a:hover{color:#335d97}
+.view-full a{background:#335d97;color:#FFF;display:inline-block;padding:5px 15px;margin:20px 0 40px}
+
+.view-full a:hover
+{
+    background:#104385
+}
+
+#numeros-urgences .col-1 li{float:left;list-style:none;margin:0 0 20px;text-align:left;width:33%}
+#numeros-urgences .col-1 li strong{background:#335d97;border-radius:50px;color:#fff;display:inline-block;height:50px;line-height:50px;margin:0 auto 15px;text-align:center;width:50px}
+#numeros-urgences .col-1 .astreinte strong{background:#FFF!important;color:#335d97!important;width:auto!important}
+#tabs .r-tabs-nav{position:relative;text-align:center}
+#tabs .r-tabs-nav li{display:inline-block;list-style:none;padding:10px 20px;text-align:center;width:25%;border:1px solid #ADADAD}
+#filters li a,#tabs .r-tabs-nav li a{display:block;text-transform:uppercase}
+#tabs .r-tabs-nav li a{color:#ADADAD;width:100%}
+
+#tabs .r-tabs-nav li a:hover
+{
+    color:#104385
+}
+
+#tabs .r-tabs-nav li.r-tabs-state-active
+{
+    background:#104385;
+    position:relative;
+    border:1px solid #104385
+}
+
+#tabs .r-tabs-nav li.r-tabs-state-active a{color:#FFF}
+#gallery_rea{position:relative}
+#filters{text-align:center;margin:0 0 30px}
+#filters li{display:inline-block;width:18%;text-align:center}
+#lequipe-municipale .col-2 #text-5,.actu_content,.page-template-loisirs #text-5{text-align:left}
+#filters li a{color:#ADADAD;width:95%;font-weight:300;padding:10px 0;border:1px solid #ADADAD}
+
+#filters li a:hover
+{
+    color:#104385
+}
+
+#filters li a.current
+{
+    background:#104385;
+    color:#FFF;
+    border:1px solid #104385
+}
+
+.image_gallery{overflow:hidden;background:#EDEDED}
+.image_gallery img{width:auto;height:120px;max-width:none;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;opacity:1}
+.image_gallery:hover img{opacity:.2}
+.text_gallery a{position:absolute;top:0;width:100%;height:192px;line-height:192px;color:#FFF;display:none}
+.adresse{width:18%;display:inline-block;margin:10px;background:#335d97;padding:20px 2%;color:#FFF}
+.adresse .titre{font-weight:700;margin:0 0 20px}
+.adresse a{display:block;color:#FFF;font-weight:500;opacity:.5;margin:0 0 10px}
+.logement,.logement a{color:#494a4a}
+.adresse a:hover{opacity:1}
+.adresse a .fa{margin:0 10px 0 0}
+
+.institutions
+{
+    background:#54C1D1
+}
+
+.logement
+{
+    background:#335d97
+}
+
+.fiche{border:1px solid #ADADAD;display:inline-block;width:28%;margin:0 1% 20px;padding:10px 1%;vertical-align:top}
+.fiche .titre{font-weight:700;margin:0 0 20px}
+.fiche a{display:block;font-weight:500;opacity:.5;margin:0 0 10px}.fiche a:hover{opacity:1}
+.fiche a .fa{margin:0 10px 0 0}
+#flash-infos #colonne_gauche a{padding:10px;display:inline-block}
+#flash-infos #colonne_gauche a img{margin:0 0 15px}
+#flash-infos #colonne_droite .widget,#lequipe-municipale .col-2 .widget,.page-template-ecole #colonne_droite .widget,.page-template-loisirs #colonne_droite .widget{margin-top:0}
+.actu_content{clear:both;padding:20px 0 0;border-bottom:1px dashed #FFF;margin:0 auto;width:90%}
+.actu_content img{float:left;width:20%!important;height:auto!important;margin:0 5% 20px 0!important}
+.actu_content .text_actu{float:left;width:70%}
+.actu_content .text_actu a{display:block;float:right;font-size:.8em;text-transform:uppercase;margin:15px 0 0;font-weight:600}
+
+.adresse_dechetterie,
+.ete,
+.hiver
+{
+    float:left;
+    width:42%;
+    margin:0 2% 20px;
+    background:url(../images/icon_sun.png) 95% center no-repeat #b1b1b1;
+    padding:20px 2%
+}
+
+.hiver
+{
+    background:url(../images/icon_snow.png) 95% center no-repeat #335d97
+}
+
+.adresse_dechetterie{background:#EDEDED;width:92%}
+.page-template-loisirs #text-5 img{margin:0 5% 20px!important}
+.page-template-ecole #colonne_gauche,.page-template-loisirs #colonne_gauche{text-align:justify}
+.page-template-loisirs #colonne_gauche img.alignright{margin:0 0 20px 5%;width:27%!important;height:auto}
+#gestes-citoyens .r-tabs-panel li,.page-template-ecole #colonne_gauche li,.page-template-loisirs #colonne_gauche li{list-style:none;margin:10px 0 0 20px}
+#gestes-citoyens .r-tabs-panel li:before,.page-template-ecole #colonne_gauche li:before,.page-template-loisirs #colonne_gauche li:before{content:">";margin:0 10px 0 -20px;color:#335d97}
+#centres-de-loisirs-6-12-ans #text-5 p,#lequipe-municipale .col-2 #text-5 p,.page-template-ecole #colonne_droite .widget p{width:90%;display:block;margin:0 auto;text-align:left}
+#gallery,.directrice{text-align:center}
+.page-template-ecole #colonne_droite .widget a{background:#FFF;display:block;float:right;padding:5px 15px;margin:0 5% 0 0}
+
+#text-43
+{
+    background:url(../images/icon_school.png) 95% center no-repeat #104385
+}
+
+#text-45
+{
+    background:url(../images/icon_football.png) 95% center no-repeat #104385
+}
+
+#text-47
+{
+    background:url(../images/icon_clock.png) 95% center no-repeat #104385
+}
+
+#text-49
+{
+    background:url(../images/icon_holidays.png) 95% center no-repeat #104385
+}
+
+#text-51
+{
+    background:url(../images/icon_bus.png) 95% center no-repeat #104385
+}
+
+#text-53
+{
+    background:url(../images/icon_book.png) 95% center no-repeat #104385
+}
+
+#cantine{margin:40px 0 0}
+
+.directrice
+{
+    margin:30px auto;
+    background:#335d97;
+    color:#FFF;
+    padding:20px 0;
+    width:90%
+}
+
+.directrice a{color:#FFF;font-weight:700}.accordion h3{cursor:pointer}
+#bienvenue-aux-gets .r-tabs-panel li{width:31%;display:inline-block;margin:30px 1%;list-style: inside none;text-transform:uppercase}
+
+#bienvenue-aux-gets .r-tabs-panel li a
+{
+    display:block;
+    width:90%;
+    background:#335d97;
+    padding:20px 5%
+}
+
+#bienvenue-aux-gets .r-tabs-panel li a:hover
+{
+    background:#b1b1b1
+}
+
+.gallery-item{width:24%;display:inline-block;margin:5px 5px 25px}
+.gallery-caption a{padding:5px 0 10px;background:#FFF;display:block;width:100%}
+
+.wpcf7-form-control-wrap,.wpcf7-list-item-label,input,label,select,textarea{display:inline-block;vertical-align:middle}
+
+.image_gallery{position:relative;width:100%;height:auto}
+.category .contenu li{list-style:none;width:31%;float:left;margin:0 1% 30px;background:#EDEDED}
+.category .contenu li:first-child{margin:0 1%}
+.category .contenu h3{font-weight:700;text-transform:uppercase;font-size:1em;padding:20px 5% 0;margin:0}
+.category .contenu li img{margin:0 auto}
+.category .contenu li .content_actu{padding:20px 5%;display:block}
+.category .contenu li .gallery-item{width:47%;margin:5px}
+.category .contenu li .gallery-item img{height:104px}
+#more_geographie,#more_histoire{display:none}
+
+#btn_more_geographie,
+#btn_more_histoire
+{
+    background:#335d97;
+    color:#FFF;
+    display:inline-block;
+    padding:5px 15px;
+    margin:0 0 30px;
+    cursor:pointer
+}
+
+.wpcf7-form{width:100%}
+.wpcf7-form-control-wrap{margin:5px 0 10px;width:60%}
+.wpcf7-list-item-label,label{width:35%;text-align:right;margin:1% 3% 1% 1%}
+.wpcf7-list-item-label{width:auto}
+input,select,textarea
+{
+    border:1px solid #DDD;
+    width:92%;
+    padding:1% 4%;
+    color:#464444;
+    margin:1% 0
+}
+.recaptcha-981{float:right}
+.radio input{width:10px}
+.wpcf7-not-valid{border:3px solid red!important}.wpcf7-not-valid-tip{display:none!important}
+.wpcf7-mail-sent-ok,.wpcf7-validation-errors{border:0!important;text-align:center;color:red;font-weight:700}
+
+#submit,
+#wp-submit,
+.wpcf7-submit
+{
+    background:#104385;
+    color:#FFF;
+    font-size:1em;
+    padding:6px 0;
+    display:block;
+    width:127px;
+    text-align:center;
+    text-transform:uppercase;
+    border:0;
+    margin:0 auto;
+    font-family:Roboto,sans-serif
+}
+
+#submit:hover,
+#wp-submit:hover,
+.wpcf7-submit:hover
+{
+    background:#335d97;
+    color:#FFF;
+    border:0;
+    cursor:pointer
+}
+
+.champs{float:left;width:50%}
+.champs_textarea label{width:15.5%}
+.champs_textarea .wpcf7-form-control-wrap{width:80%}
+.recaptcha-775{width:100%;text-align:center}
+.recaptcha-775 div{margin:0 auto}
+
+#page_introuvable
+{
+    text-align:center;
+    font-size:1.1em;
+    font-weight:300
+}
+
+#page_introuvable #logo
+{
+    float:none;
+    margin:40px auto;
+    height:146px;
+    text-align:center;
+    width:20%
+}
+
+#page_introuvable h1
+{
+    background:0 0;
+    color:#575656;
+    float:none;
+    font-size:4em;
+    font-weight:300;
+    text-align:center;
+    margin:40px 0;
+    padding:0;
+    text-transform:uppercase
+}
+
+#carte_identite ul li,
+#passeport ul li
+{
+    margin-left:60px
+}
+
+#carte_identite ul ul li,
+#passeport ul ul li
+{
+    margin-left:80px
+}
+
+#carte_identite,
+#passeport
+{
+    display:none;
+    background-color:#FFF;
+    padding:20px
+}
+
+@media screen and (max-width:1800px)
+{
+    #logo
+    {
+        left:8%
+    }
+    .menu_principal li
+    {
+/*        font-size:19px */
+        font-size:15px
+    }
+}
+
+@media screen and (max-width:1400px)
+{
+    #logo
+    {
+        left:0
+    }
+}

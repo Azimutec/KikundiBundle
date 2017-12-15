@@ -61,11 +61,11 @@ class AzimutecKikundiExtension extends Extension implements PrependExtensionInte
 
 
         // Loading our YAML file containing our template rules
-        #$config2File = __DIR__ . '/../Resources/config/config.yml';
-        #$config2 = Yaml::parse( file_get_contents( $config2File ) );
-        // We explicitly prepend loaded configuration for "asssetic" namespace.
+        $config2File = __DIR__ . '/../Resources/config/config.yml';
+        $config2 = Yaml::parse( file_get_contents( $config2File ) );
+        // We explicitly prepend loaded configuration for "assetic" namespace.
         // So it will be placed under the "assetic" configuration key, like in config.yml.
-        #$container->prependExtensionConfig( 'assetic', $config2 );
-        #$container->addResource( new FileResource( $config2File ) );
+        $container->prependExtensionConfig( 'assetic', $config2 );
+        $container->addResource( new FileResource( $config2File ) );
     }
 }
