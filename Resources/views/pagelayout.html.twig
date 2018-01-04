@@ -11,10 +11,10 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
     <!-- Bootstrap CSS (Local)-->
     {% block stylesheets %}
-        {% stylesheets '@AzimutecKikundiBundle/Resources/public/css/bootstrap-4.0.0-beta2.css' filter='cssrewrite' %}
-            <link rel="stylesheet" type='text/css' href="{{ asset_url }}" />
-        {% endstylesheets %}
-        {% stylesheets '@AzimutecKikundiBundle/Resources/public/css/screen.css' filter='cssrewrite' %}
+        {#% stylesheets '@AzimutecKikundiBundle/Resources/public/css/bootstrap-4.0.0-beta2.css' filter='cssrewrite' %#}
+            {#<link rel="stylesheet" type='text/css' href="{{ asset_url }}" />#}
+        {#% endstylesheets %#}
+        {% stylesheets '@AzimutecKikundiBundle/Resources/public/css/screen.css' %}
             <link rel="stylesheet" type='text/css' href="{{ asset_url }}" media="screen"/>
         {% endstylesheets %}
         {% stylesheets '@AzimutecKikundiBundle/Resources/public/css/responsive.css' filter='cssrewrite' %}
@@ -63,8 +63,8 @@
                     <div id="wunderground_forecast_widget-2" class="widget wunderground">
                         <div class="widgettitle">Weather Forecast</div>
                         <div class="wu-wrapper wu-current-conditions wp_wunderground">
-                            <div class="wu-forecast-wrapper"><div class="wu-forecast-body"><div class="wu-day-title"><span class="wu-day-current-temp">-1<sup>&deg;</sup></span><small>C</small></div><div class="wu-icon"><img src="./icones/clear.gif" alt="Ciel dégagé" width="100" height="100" /></div></div></div>
-                            <div class="wu-copyright"><a href="http://french.wunderground.com/q/zmw:00000.264.07482" rel="external" title="View the Bettant forecast on Wunderground.com"><img src="./icones/wundergroundLogo_4c_horz.png" alt="Wunderground.com" width="49" height="22" /></a></div>
+                            <div class="wu-forecast-wrapper"><div class="wu-forecast-body"><div class="wu-day-title"><span class="wu-day-current-temp">-1<sup>&deg;</sup></span><small>C</small></div><div class="wu-icon">{% image '@AzimutecKikundiBundle/Resources/public/icones/clear.gif' %}<img src="{{ asset_url }}" alt="Ciel dégagé" title="Ciel dégagé" width="100" height="100" />{% endimage %}</div></div></div>
+                            <div class="wu-copyright"><a href="http://french.wunderground.com/q/zmw:00000.264.07482" rel="external" title="View the Bettant forecast on Wunderground.com">{% image '@AzimutecKikundiBundle/Resources/public/icones/wundergroundLogo_4c_horz.png' %}<img src="{{ asset_url }}" alt="Wunderground.com" title="Wunderground.com" width="49" height="22" />{% endimage %}</a></div>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -79,7 +79,7 @@
             </div>
             <div id="header">
                 <div id="header_content">
-                    <div id="logo"> <a href="./"> <img src="./images/logo_lesgets_mairie.png" alt="Mairie des Gets" title="Mairie des Gets" /> </a> </div>
+                    <div id="logo"> <a href="./">{% image '@AzimutecKikundiBundle/Resources/public/images/logo_lesgets_mairie.png' %}<img src="{{ asset_url }}" alt="Mairie des Gets" title="Mairie des Gets" />{% endimage %}</a></div>
                     <div id="menu" class="transitions">
                         <div class="menu_principal transitions">
                             <ul id="main-menu-nav" class="scroll">
